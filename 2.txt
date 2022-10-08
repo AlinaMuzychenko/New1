@@ -1,3 +1,4 @@
+Работа с MySQL
 CREATE DATABASE IF NOT EXISTS example_second;
 USE example_second;
 CREATE TABLE users_new
