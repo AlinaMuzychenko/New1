@@ -1,0 +1,39 @@
+CREATE DATABASE IF NOT EXISTS example_second;
+USE example_second;
+CREATE TABLE users_new
+    (id_users integer auto_increment primary key,
+    name_users varchar(25),
+    age_users integer);
+INSERT INTO users_new (name_users, age_users)
+    values ('Fedor', 43);
+SELECT * FROM users_new;
+
+CREATE DATABASE IF NOT EXISTS laba2;
+USE laba2; 
+CREATE TABLE clients
+(kod_clients integer,
+surname_clients varchar(25),
+name_clients varchar(25),
+number_clients integer);
+INSERT INTO clients (kod_clients, surname_clients, name_clients, number_clients)
+values (4000, 'Pupkin', 'Vova', 88122345689),
+(4311, 'Popov', 'Volodya', 88129876512),
+(4452, 'Ivanova', 'Anna', 88124358790),
+(4653, 'Petrova', 'Olga', 88129500512),
+(4784, 'Sokolova', 'Maria', 88120001300);
+SELECT * FROM clients;
+
+CREATE DATABASE IF NOT EXISTS laba2; # создаем БД
+USE laba2; # обращаемся к БД
+CREATE TABLE clients # создаём таблицу
+(kod_clients integer,
+surname_clients varchar(25),
+name_clients varchar(25),
+number_clients integer);
+INSERT INTO clients (kod_clients, surname_clients, name_clients, number_clients) # добавим записи в таблицу
+values (4000, 'Pupkin', 'Vova', 88122345689),
+(4311, 'Popov', 'Volodya', 88129876512),
+(4452, 'Ivanova', 'Anna', 88124358790),
+(4653, 'Petrova', 'Olga', 88129500512),
+(4784, 'Sokolova', 'Maria', 88120001300);
+SELECT * FROM clients; # выведем на экран данные из таблицы
